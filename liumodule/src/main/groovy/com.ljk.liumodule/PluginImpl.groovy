@@ -8,7 +8,7 @@ public class PluginImpl implements Plugin<Project> {
     @Override
     void apply(Project project) {
         project.task('testTask') << {
-            println "Hello gradle plugin"
+            println "Hello gradle plugin liu"
         }
     }
 }

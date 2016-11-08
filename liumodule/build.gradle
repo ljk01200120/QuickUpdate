@@ -8,10 +8,23 @@ dependencies {
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 group='com.ljk.liumodule.plugin'
-version='1.0.0'
+version='1.0.1'
+
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+
+        java {
+            srcDir 'src/main/java'
+        }
+    }
+}
 
 uploadArchives {
     repositories {
@@ -20,3 +33,5 @@ uploadArchives {
         }
     }
 }
+
+//apply from:'mavenpush.gradle'
